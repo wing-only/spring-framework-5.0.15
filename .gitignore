@@ -38,13 +38,3 @@ out
 test-output
 atlassian-ide-plugin.xml
 .gradletasknamecache
-
-/spring-tl-beans/
-/spring-tuling-aop/
-/spring-tuling-autoconfiguration/
-/spring-tuling-boot/
-/spring-tuling-jdbc/
-/spring-tuling-mybatis/
-/spring-tuling-transactional/
-/spring-tuling-webmvc/
-/spring-tulingxueyuan-javabasic/
