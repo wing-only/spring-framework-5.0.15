@@ -7,7 +7,7 @@ import org.springframework.context.annotation.*;
  * Created by xsls on 2019/7/7.
  */
 @Configuration
-@ComponentScan(basePackages = {"com.tuling.compent"})
+@ComponentScan(basePackages = {"com.wing.spring.config"})
 public class MainConfig {
 
 

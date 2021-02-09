@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Import;
 /**
  * Created by xsls on 2019/8/22.
  */
-@ComponentScan(basePackages = {"com.tuling.setInject"})
+@ComponentScan(basePackages = {"com.wing.spring.setInject"})
 //@Import(value = {InstC.class,TulingImportBeanDefinitionRegister.class,TulingImportSelector.class})
 //@Import(value = {InstC.class})
 //@Import(value = {TulingImportBeanDefinitionRegister.class})

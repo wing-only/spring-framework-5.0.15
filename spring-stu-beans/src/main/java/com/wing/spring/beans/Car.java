@@ -31,16 +31,17 @@ public class Car implements BeanNameAware {
     }
 
     public Car() {
-        System.out.println("Car已加载");
+        System.out.println("空参构造Car已加载");
     }
 
     public Car(String name) {
+		System.out.println("name参数构造Car");
         this.name = name;
     }
 
     @Override
     public void setBeanName(String name) {
-        System.out.println("Bean的名字"+name);
+        System.out.println("setBeanName:"+name);
     }
 
     /*@Override

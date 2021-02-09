@@ -1,6 +1,6 @@
 package com.wing.spring.javabasic;
 
-import com.wing.spring.iocbeanlifecicle.Tank;
+import com.wing.spring.lifecycle.Tank;
 import org.springframework.stereotype.Component;
 
 /***

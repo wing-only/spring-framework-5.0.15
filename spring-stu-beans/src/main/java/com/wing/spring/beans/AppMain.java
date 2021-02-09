@@ -1,4 +1,5 @@
-import org.springframework.context.ApplicationContext;
+package com.wing.spring.beans;
+
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /***
@@ -8,7 +9,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class AppMain {
 
 	public static void main(String[] args) {
-		ClassPathXmlApplicationContext ioc = new ClassPathXmlApplicationContext("classpath:spring.xml");
+		ClassPathXmlApplicationContext ioc = new ClassPathXmlApplicationContext("classpath:com/wing/spring/beans/beans.xml");
 		//获得被Factory修饰后的getobject返回的对象
 		System.out.println(ioc.getBean("car"));
 

@@ -29,15 +29,14 @@ rootProject.name = "spring"
 rootProject.children.each {project ->
 	project.buildFileName = "${project.name}.gradle"
 }
-include 'spring-stu-javabasic'
 include 'spring-stu-beans'
-include 'spring-stu-transactional'
 include 'spring-stu-aop'
+include 'spring-stu-transactional'
 include 'spring-stu-webmvc'
-include 'spring-stu-boot'
-include 'spring-stu-boot'
 include 'spring-stu-jdbc'
 include 'spring-stu-mybatis'
 include 'spring-stu-autoconfiguration'
+include 'spring-stu-boot'
+
 
 

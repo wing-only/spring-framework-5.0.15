@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean class="com.wing.spring.lifecycle.Tank" id="tank" scope="prototype"/>
+	<!-- <bean class="Car" id="car ">
+	   <property name="name" value="123"></property>
+	 </bean>
+	 <bean class="Car" id="car2" parent="car "></bean>-->
+	<bean class="com.wing.spring.lifecycle.Car" id="car"/>
+</beans>

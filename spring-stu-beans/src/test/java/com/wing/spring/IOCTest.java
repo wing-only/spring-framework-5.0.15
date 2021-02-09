@@ -1,6 +1,6 @@
 package com.wing.spring;
 
-import com.wing.spring.iocbeanlifecicle.Car;
+import com.wing.spring.lifecycle.Car;
 import org.junit.Test;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.beans.factory.support.GenericBeanDefinition;

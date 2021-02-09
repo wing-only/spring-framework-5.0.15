@@ -105,7 +105,7 @@ configure(allprojects) { project ->
 
 	compileJava.options*.compilerArgs = commonCompilerArgs +
 			["-Xlint:varargs", "-Xlint:fallthrough", "-Xlint:rawtypes",
-			 "-Xlint:deprecation", "-Xlint:unchecked", "-Werror"]
+			 "-Xlint:deprecation", "-Xlint:unchecked"] //, "-Werror" 从括号里面最后一个移出来了
 
 	compileTestJava.options*.compilerArgs = commonCompilerArgs +
 			["-Xlint:-varargs", "-Xlint:-fallthrough", "-Xlint:-rawtypes",
@@ -292,9 +292,9 @@ configure(rootProject) {
 	}
 
 	artifacts {
-		archives docsZip
-		archives schemaZip
-		archives distZip
+		// archives docsZip
+		// archives schemaZip
+		// archives distZip
 	}
 
 	// task wrapper(type: Wrapper) {
@@ -332,10 +332,24 @@ def qualifyVersionIfNecessary(version) {
 }
 
 
-//设置字符集
-tasks.withType(JavaCompile){
-	options.encoding = 'UTF-8'
-}
-tasks.withType(Javadoc){
-	options.encoding = 'UTF-8'
+
+
+allprojects{
+	//设置字符集
+	tasks.withType(JavaCompile){
+		options.encoding = 'UTF-8'
+	}
+	//javado编码
+	tasks.withType(Javadoc){
+		options.encoding = 'UTF-8'
+	}
+	//不生成javadoc
+	tasks.withType(Javadoc).all {
+		enabled = false
+	}
+
+	test{
+		enabled false
+	}
+
 }

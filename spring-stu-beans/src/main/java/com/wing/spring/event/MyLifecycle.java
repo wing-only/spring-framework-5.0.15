@@ -11,10 +11,12 @@ import org.springframework.stereotype.Component;
 //@Component
 public class MyLifecycle implements /*SmartLifecycle*/ Lifecycle {
     private boolean started = false;
-    public boolean isRunning() {
+    @Override
+	public boolean isRunning() {
         return started;
     }
-    public void start() {
+    @Override
+	public void start() {
         System.err.println("MyLifecycle starting");
         started = true;
     }

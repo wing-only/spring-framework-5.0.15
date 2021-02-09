@@ -1,4 +1,4 @@
-package com.wing.spring;
+package com.wing.spring.lifecycle;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -8,7 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class MainStart {
 
 	public static void main(String[] args) {
-		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:/beans/beans.xml");
+		ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("classpath:/com/wing/spring/lifecycle/beans-lifecycle.xml");
 		ctx.getBean("car");
 		/*System.out.println(ctx.getBean(TulingDao.class).getTulingDataSource().getFlag());*/
 	}

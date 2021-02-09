@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
  * Created by xsls on 2019/7/15.
  */
 @Configuration
-@ComponentScan(basePackages = {"com.tuling.event"})
+@ComponentScan(basePackages = {"com.wing.spring.event"})
 //@EnableAsync  异步事件
 public class MainConfig {
 

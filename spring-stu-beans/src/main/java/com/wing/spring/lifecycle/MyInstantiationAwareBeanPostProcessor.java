@@ -1,4 +1,4 @@
-package com.wing.spring.iocbeanlifecicle;
+package com.wing.spring.lifecycle;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor;

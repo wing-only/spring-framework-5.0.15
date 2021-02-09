@@ -1,15 +1,13 @@
-package com.wing.spring.iocbeanlifecicle;
+package com.wing.spring.lifecycle;
 
 import org.springframework.context.annotation.*;
-import org.springframework.stereotype.Controller;
 
 /**
  * Created by xsls on 2019/8/15.
  */
 @Configuration
-@ComponentScan(basePackages = {"com.tuling.iocbeanlifecicle"})
+@ComponentScan(basePackages = {"com.wing.spring"})
         //excludeFilters={@ComponentScan.Filter(type=FilterType.ANNOTATION,value={Controller.class})})
-
 public class MainConfig {
 
     /*@Bean("car")
