@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @Author 徐庶   QQ:1092002729
  * @Slogan 致敬大师，致敬未来的你
  */
-public class AppMain {
+public class XmlMain {
 
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext ioc = new ClassPathXmlApplicationContext("classpath:com/wing/spring/beans/beans.xml");

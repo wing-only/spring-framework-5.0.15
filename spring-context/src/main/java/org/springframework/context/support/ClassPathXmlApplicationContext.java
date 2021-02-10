@@ -141,7 +141,7 @@ public class ClassPathXmlApplicationContext extends AbstractXmlApplicationContex
 		super(parent);   // 初始化父类 ，获得xml路径资源解析器
 		setConfigLocations(configLocations);  // 通过环境变量解析 xml路径
 		if (refresh) {
-			refresh();   // 这个方法时spring是最终要的一个方法，甚至体系整个ioc的声明周期
+			refresh();   // 这个方法是spring是最终要的一个方法，甚至体系整个ioc的生命周期
 		}
 	}
 
