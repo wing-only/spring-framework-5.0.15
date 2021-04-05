@@ -17,7 +17,7 @@ import static org.springframework.context.annotation.FilterType.ASSIGNABLE_TYPE;
 * @version: 1.0
 */
 @Configuration
-@ComponentScan(basePackages = "com.tuling",excludeFilters = {
+@ComponentScan(basePackages = "com.wing.spring",excludeFilters = {
 		@ComponentScan.Filter(type = FilterType.ANNOTATION,value={RestController.class,Controller.class}),
 		@ComponentScan.Filter(type = ASSIGNABLE_TYPE,value =WebAppConfig.class ),
 })

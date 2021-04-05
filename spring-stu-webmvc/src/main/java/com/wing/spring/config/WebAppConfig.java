@@ -22,7 +22,7 @@ import java.util.List;
 * @version: 1.0
 */
 @Configuration
-@ComponentScan(basePackages = {"com.tuling"},includeFilters = {
+@ComponentScan(basePackages = {"com.wing.spring"},includeFilters = {
 		@ComponentScan.Filter(type = FilterType.ANNOTATION,value = {RestController.class, Controller.class})
 },useDefaultFilters =false)
 @EnableWebMvc
